@@ -1,0 +1,31 @@
+.newsDetail{
+  padding: 6rpx 20rpx 20rpx;
+}
+.title{
+  font-size: 36rpx;
+  font-weight: bold;
+  color:#222;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin:20rpx 0;
+}
+.info .red{
+  color: red;
+  margin-right: 10rpx;
+}
+.time{
+  color: #999999;
+}
+
+.content{
+  text-indent: 1em;
+}
+.content image{
+  width: 100%;
+  min-height: 390rpx;
+  height: auto;
+  margin: 12rpx 0;
+  display: block;
+}

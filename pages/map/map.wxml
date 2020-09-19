@@ -1,0 +1,10 @@
+<view class="mapWrap">
+  <map
+    latitude="{{poinits.latitude}}"
+    longitude="{{poinits.longitude}}"
+    markers="{{markers}}"
+    scale="18"
+    enable-3D
+    show-location
+  ></map>
+</view>

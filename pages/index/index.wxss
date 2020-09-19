@@ -1,0 +1,103 @@
+.hdSearh{
+  background-color: #b94446;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.searchWrap{
+  display: flex;
+  padding: 0 20rpx 20rpx;
+  margin-top: 15rpx;
+}
+.release{
+  width: 50rpx;
+  height: 75rpx;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+}
+.camera{
+  width: 100%;
+}
+.release text{
+  color:white;
+  font-size: 20rpx;
+}
+.search{
+  flex: 1;
+  display: inherit;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20rpx
+}
+.search input{
+  flex: 1;
+  margin-left: 20rpx;
+}
+.searchplaceholder{
+  color: white;
+}
+
+
+.newsList{
+  padding: 0 30rpx;
+  background: white;
+}
+.newsList .list{
+  padding: 20rpx 0;
+  border: 1px solid #ddd;
+  border-width: 0 0 0.5px;
+}
+.newsList .title{
+  font-size: 32rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.newsList .info{
+  font-size: 20rpx;
+  color: #999;
+  margin: 5rpx 0;
+}
+.newsList .info text{
+  margin: 10rpx;
+}
+.newsList .info .red{
+  color: red;
+}
+.newsList .flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newsList .flex .con{
+  margin-right: 20rpx;
+}
+.newsList .morePic{
+  display: flex;
+  align-items: center;
+  height: 148rpx;
+  overflow: hidden;
+  margin:6rpx 0;
+} 
+.newsList .morePic image{
+  flex-basis: 225rpx;
+  height: 100%;
+  border-radius: 12rpx;
+  margin-right: 15rpx;
+}
+.newsList .list .flex .firstPic{
+  width:227rpx;
+  height: 147rpx;
+}
+.newsList .list .firstPic image{
+  width:227rpx;
+  height: 147rpx;
+  border-radius: 12rpx;
+}

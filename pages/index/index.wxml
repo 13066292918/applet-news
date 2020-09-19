@@ -1,0 +1,63 @@
+<view class="hdSearh">
+  <view class="searchWrap" style="margin-top:{{capsule}}px;">
+    <view class="release">
+      <image class="camera" src="/static/icon/camera.png" mode="widthFix" />
+      <text>发布</text>
+    </view>
+    <view class="search">
+      <icon type="search" color="white"/>
+      <input placeholder="请输入搜索内容" placeholder-class="searchplaceholder"/>
+    </view>
+  </view>
+  
+  <scroll-view 
+    scroll-x class="bg-white nav"
+    scroll-with-animation 
+    scroll-left="{{scrollLeft}}"
+  >
+    <view 
+      class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{navList}}" wx:key="index" 
+      bindtap="tabSelect" data-index="{{index}}"
+      data-title="{{item.name}}"
+      data-channelId="{{item.channelId}}"
+    >
+      {{item.name}}
+    </view>
+  </scroll-view>
+</view>
+
+<view class="newsList" style="margin-top:{{mtop}}px;">
+  <view wx:for="{{contentlist}}" 
+    wx:key="index" 
+    class="list {{item.imageurls.length == 1 && 'flex'}}"
+    bindtap="getGoToNewsDetailPage"
+    data-id="{{item.id}}"
+    >
+    <view class="con">
+      <view class="title">{{item.title}}</view>
+      <view class="morePic" 
+        wx:if="{{item.imageurls.length>1 && item.havePic}}">
+        <image 
+          wx:for="{{item.imageurls}}" wx:key="index" 
+          mode="aspectFill"
+          src="{{item.url}}"
+          wx:if="{{index<3}}"
+          />
+      </view>
+      <view class="info">
+        <text class="channel red">{{item.channelName}}</text>
+        <text class="soure">{{item.soure}}</text>
+        <text class="time">{{item.pubDate}}</text>
+      </view>
+    </view>
+
+    <view class="firstPic"
+      wx:if="{{item.imageurls.length == 1 && item.havePic}}">
+      <image 
+          wx:for="{{item.imageurls}}" wx:key="index" 
+          mode="aspectFill"
+          src="{{item.url}}"
+      />
+    </view>
+  </view>
+</view>

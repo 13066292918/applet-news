@@ -1,0 +1,14 @@
+<view class="UCenter-bg">
+    <image src="{{userInfo.avatarUrl}}" 
+      class="png" mode="widthFix" 
+      bindtap="getUserInfo">
+    </image>
+    <view class="margin-top-sm">
+      <text>{{userInfo.nickName}}</text>
+    </view>
+
+    <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo"
+    bindgetuserinfo="getUserInfo">
+      登录授权
+    </button>
+</view>

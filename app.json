@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/newsDetail/newsDetail",
+    "pages/map/map",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/static/icon/index01.png",
+      "selectedIconPath": "/static/icon/index02.png"
+    },{
+      "pagePath": "pages/map/map",
+      "text": "位置",
+      "iconPath": "/static/icon/map01.png",
+      "selectedIconPath": "/static/icon/map02.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "用户",
+      "iconPath": "/static/icon/user01.png",
+      "selectedIconPath": "/static/icon/user02.png"
+    }]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你在哪里呢~~~" 
+    }
+  }
+}
