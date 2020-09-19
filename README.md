@@ -4,12 +4,17 @@
 
  ![image](https://github.com/13066292918/applet-news/blob/master/describe/001.png)
  ![image](https://github.com/13066292918/applet-news/blob/master/describe/002.png)
+ 
+ 
+ 
 
 
 点击下方中间的选项,会获取用户的位置信息,并显示出位置(会提示用户授权)
 
  ![image](https://github.com/13066292918/applet-news/blob/master/describe/003.png)
  ![image](https://github.com/13066292918/applet-news/blob/master/describe/004.png)
+ 
+ 
  
  
  点击右下角的选项,切换到用户信息页面,点击授权登录,提示用户授权之后,显示用户的头像和名称
