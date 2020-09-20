@@ -1,6 +1,6 @@
 仿新闻主页面和新闻详情页,并获取用户信息和地理位置  
 
-主要仿新闻的主页,在主页中点击新闻会弹出新闻详情
+主要仿新闻的主页,在主页中点击新闻会弹出新闻详情  
 alignPostion(){//获取头部标签的高度
     const _this = this
     const  {top,height} = wx.getMenuButtonBoundingClientRect()
